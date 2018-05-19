@@ -31,10 +31,12 @@
 # Executables
 *.exe
 *.out
+*.in
 *.app
 *.i*86
 *.x86_64
 *.hex
+*.zip
 
 # Debug files
 *.dSYM/
