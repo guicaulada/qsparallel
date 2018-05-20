@@ -63,14 +63,14 @@ int main(void) {
 	}
 
 	fscanf(file, "%ld", &N);
-	keys = (char**) malloc(N * 8);
+	keys = (char**) malloc(N * sizeof(char*));
 	if (keys == NULL) {
 		perror("Memory allocation");
 		exit(EXIT_FAILURE);
 	}
 
 	for (i = 0; i < N; i++) {
-		keys[i] = malloc(8);
+		keys[i] = (char*) malloc(8 * sizeof(char));
 		if (keys[i] == NULL) {
 			perror("Memory allocation");
 			exit(EXIT_FAILURE);
